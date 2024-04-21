@@ -17,9 +17,9 @@ A "**B**" (or "cow") indicates that a guessed digit is correct but in the wrong 
 
 For example, if the secret number is **1234** and the guess is **1325**, the feedback would be "**1A2B**":
 
-- "**1A**" for the two numbers (**1**) being in the correct position.
+- "**1A**" for one number (**1**) being in the correct position.
 
-- "**2B**" for one number (**2** and **3**) being correct but in the wrong position.
+- "**2B**" for the two numbers (**2** and **3**) being correct but in the wrong position.
 
 - Number **5** is incorrect and ignored in the feedback.
 
