@@ -15,11 +15,11 @@ An "**A**" (or "bull" in some versions) means that one of the guessed digits is 
 
 A "**B**" (or "cow") indicates that a guessed digit is correct but in the wrong position.
 
-For example, if the secret number is **1234** and the guess is **1325**, the feedback would be "**2A1B**":
+For example, if the secret number is **1234** and the guess is **1325**, the feedback would be "**1A2B**":
 
-- "**2A**" for the two numbers (**1** and **3**) being in the correct position.
+- "**1A**" for the two numbers (**1**) being in the correct position.
 
-- "**1B**" for one number (**2**) being correct but in the wrong position.
+- "**2B**" for one number (**2** and **3**) being correct but in the wrong position.
 
 Number **5** is incorrect and ignored in the feedback.
 
