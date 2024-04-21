@@ -21,7 +21,7 @@ For example, if the secret number is **1234** and the guess is **1325**, the fee
 
 - "**2B**" for one number (**2** and **3**) being correct but in the wrong position.
 
-Number **5** is incorrect and ignored in the feedback.
+- Number **5** is incorrect and ignored in the feedback.
 
 **3.  Objective:**
 
