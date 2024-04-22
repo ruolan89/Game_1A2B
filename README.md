@@ -26,3 +26,8 @@ For example, if the secret number is **1234** and the guess is **1325**, the fee
 **3.  Objective:**
 
 The goal is for the guesser to identify the secret number using as few guesses as possible, guided by the feedback from each attempt.
+
+
+**Info:**
+- Java: Oracle Open JDK Version21.0.2
+- JavaFX
