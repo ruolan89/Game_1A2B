@@ -18,6 +18,13 @@ public class Game {
         this.endTime = null;
     }
 
+    public void updateHistory(Guess guess){
+        this.history.add(guess);
+        if (guess.getFeedback().equals("4A0B")){
+            this.endTime = LocalDateTime.now();
+        }
+    }
+
     public boolean isEnd(){
         if(this.endTime==null){
             return false;
@@ -55,8 +62,8 @@ public class Game {
         return history;
     }
 
-    public void setHistory(ArrayList<Guess> history) {
-        this.history = history;
+    public void setHistory(Guess guess) {
+        this.history.add(guess);
     }
 
     public LocalDateTime getStartTime() {
