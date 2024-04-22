@@ -9,6 +9,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
@@ -117,12 +118,19 @@ public class GameApplication extends Application {
         nineBtn.setOnAction(actionEvent -> clickNumberEvent(nineBtn));
         clearBtn.setOnAction(actionEvent -> clickClearBtnEvent());
 
+        HBox hBoxHistory = new HBox(history);
+        hBoxHistory.setAlignment(Pos.CENTER);
+
         historyVbox = new VBox();
         historyVbox.setSpacing(10);
-        historyVbox.getChildren().add(history);
         historyVbox.setAlignment(Pos.CENTER);
 
-        VBox root = new VBox(hBox,hBox2,gridPane,historyVbox);
+        ScrollPane scrollPane = new ScrollPane();
+        scrollPane.setContent(historyVbox);
+        scrollPane.setFitToWidth(true);
+        scrollPane.setPrefHeight(270);
+
+        VBox root = new VBox(hBox,hBox2,gridPane,hBoxHistory,scrollPane);
 
         Scene scene = new Scene(root, 400,500);
 
@@ -162,7 +170,6 @@ public class GameApplication extends Application {
         inputTF.setText("");
         message.setText("");
         historyVbox.getChildren().clear();
-        historyVbox.getChildren().add(history);
 
         //create new game
         secretNumber = new SecretNumber(4);
