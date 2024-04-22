@@ -31,3 +31,7 @@ The goal is for the guesser to identify the secret number using as few guesses a
 **Info:**
 - Java: Oracle Open JDK Version21.0.2
 - JavaFX
+
+
+![screenshot](https://github.com/ruolan89/Game_1A2B/assets/144265962/2bbebf69-4be0-4c96-935e-0d666c878c6d)
+
